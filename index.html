@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>
+            Hello World
+        </title>
+    </head>
+    <body>
+        <button type="button" onclick="onClick()">Click Me!</button>
+        <div id="test">
+            Button not yet clicked.
+        </div>
+        <div id="update">
+            No update yet.
+        </div>
+        <script>
+            function onClick() {
+                document.getElementById("test").innerHTML = "Button Clicked!";
+                var message = {
+                    foo: "bar" 
+                };
+                window.webkit.messageHandlers.doStuff.postMessage(message);
+            }
+            function onUpdate(msg){
+                document.getElementById("update").innerHTML = "Updated " + msg;
+            }
+        </script>
+    </body>
+</html>

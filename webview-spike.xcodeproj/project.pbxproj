@@ -14,6 +14,7 @@
 		4C8EC75F203E1D1D003E0358 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C8EC75D203E1D1D003E0358 /* LaunchScreen.storyboard */; };
 		4C8EC76A203E1D1D003E0358 /* webview_spikeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8EC769203E1D1D003E0358 /* webview_spikeTests.swift */; };
 		4C8EC775203E1D1D003E0358 /* webview_spikeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8EC774203E1D1D003E0358 /* webview_spikeUITests.swift */; };
+		4C8EC784203E1F17003E0358 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8EC783203E1F17003E0358 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		4C8EC770203E1D1D003E0358 /* webview-spikeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "webview-spikeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C8EC774203E1D1D003E0358 /* webview_spikeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webview_spikeUITests.swift; sourceTree = "<group>"; };
 		4C8EC776203E1D1D003E0358 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C8EC783203E1F17003E0358 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C8EC784203E1F17003E0358 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 				4C8EC768203E1D1D003E0358 /* webview-spikeTests */,
 				4C8EC773203E1D1D003E0358 /* webview-spikeUITests */,
 				4C8EC752203E1D1D003E0358 /* Products */,
+				4C8EC782203E1F17003E0358 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +127,14 @@
 				4C8EC776203E1D1D003E0358 /* Info.plist */,
 			);
 			path = "webview-spikeUITests";
+			sourceTree = "<group>";
+		};
+		4C8EC782203E1F17003E0358 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C8EC783203E1F17003E0358 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
