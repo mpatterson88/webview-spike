@@ -6,6 +6,7 @@
     </head>
     <body>
         <button type="button" onclick="onClick()">Click Me!</button>
+        <input type="text" id="amount" value="20" />
         <div id="test">
             Button not yet clicked.
         </div>
@@ -16,12 +17,13 @@
             function onClick() {
                 document.getElementById("test").innerHTML = "Button Clicked!";
                 var message = {
-                    foo: "bar" 
+                    amount: 50
                 };
                 window.webkit.messageHandlers.doStuff.postMessage(message);
             }
             function onUpdate(msg){
                 document.getElementById("update").innerHTML = "Updated " + msg;
+                return "foo"
             }
         </script>
     </body>
